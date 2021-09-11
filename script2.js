@@ -1,19 +1,15 @@
-function duplicateCount(text){
-    //...
-    obj = {};
-    counter = 0
-    for(let i = 0; i < text.length; i++) {
-      if(!obj[text[i]]) {
-        obj[text[i]] = 1;
-      } else {
-         if(obj[text[i]] < 2) {
-             obj[text[i]] += 1;
-             counter++
-         }
-      }
-    }
-    console.log(counter);
-    return obj;
-  }
+function square(num) {
 
-  console.log(duplicateCount('afa0000olabiii'));
+    let tString = num.toString();
+    strings = '';
+    for(let i = 0; i < tString.length; i++) {
+        let newNum = Number(tString[i])
+        strings += (newNum * newNum)
+    }
+    console.log(strings);
+    console.log(num);
+    console.log(tString);
+    return strings;
+}
+
+square(687)
